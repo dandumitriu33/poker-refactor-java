@@ -28,4 +28,19 @@ class CardTest {
 
     }
 
+    @Test
+    void getValueValid() {
+        Card tempOne = new Card("s3");
+        assertEquals(3, tempOne.getValue());
+        Card tempTwo = new Card("SK");
+        assertEquals(13, tempTwo.getValue());
+    }
+
+    @Test
+    void getValueFail() {
+        Card tempOne = new Card("s10");
+        assertNotEquals("s10", tempOne.getValue());
+        Card tempTwo = new Card("SK");
+        assertNotEquals("SK", tempTwo.getValue());
+    }
 }
