@@ -3,11 +3,6 @@ import java.util.List;
 
 public class PokerClient {
 
-//    public Card card1;
-//    public Card card2;
-//    public Card card3;
-//    public Card card4;
-//    public Card card5;
     List<Card> o = new ArrayList<Card>();
     List<Card> m = new ArrayList<Card>();
 
@@ -18,7 +13,6 @@ public class PokerClient {
         m.add(new Card(p3.toUpperCase()));
         m.add(new Card(p4.toUpperCase()));
         m.add(new Card(p5.toUpperCase()));
-
     }
 
     public boolean highestCardIsMine(String p1, String p2, String p3, String p4, String p5) {
